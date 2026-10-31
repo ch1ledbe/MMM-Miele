@@ -1,0 +1,32 @@
+{
+  "LOADING": "Chargement de Miele…",
+  "ERROR": "Erreur",
+  "NO_DEVICE_FOUND": "Aucun appareil Miele trouvé",
+  "UNKNOWN": "Inconnu",
+  "PHASE": "Phase",
+  "ELAPSED": "Écoulé",
+  "REMAINING": "Restant",
+  "TEMP": "Température",
+  "AUTH_REQUIRED": "Autorisation requise",
+  "OPEN_THIS_URL": "Ouvrez cette URL dans un navigateur :",
+
+  "STATUS_RUNNING": "En cours",
+  "STATUS_READY": "Prêt",
+  "STATUS_FINISHED": "Terminé",
+  "STATUS_PAUSED": "En pause",
+  "STATUS_ERROR": "Erreur",
+  "STATUS_OFF": "Éteint",
+
+  "PHASE_WASH": "Lavage",
+  "PHASE_RINSE": "Rinçage",
+  "PHASE_SPIN": "Essorage",
+  "PHASE_DRY": "Séchage",
+  "PHASE_HEATING": "Chauffage",
+  "PHASE_COOLING": "Refroidissement",
+  "PHASE_ANTI_CREASE": "Antiarrugas",
+  
+  "DEVICE_WASHING_MACHINE": "Lave-linge",
+  "DEVICE_DRYER": "Sèche-linge",
+  "DEVICE_DISHWASHER": "Lave-vaisselle",
+  "DEVICE_OVEN": "Four"
+}

@@ -1,0 +1,32 @@
+{
+  "LOADING": "Miele wird geladen…",
+  "ERROR": "Fehler",
+  "NO_DEVICE_FOUND": "Kein Miele-Gerät gefunden",
+  "UNKNOWN": "Unbekannt",
+  "PHASE": "Phase",
+  "ELAPSED": "Verstrichen",
+  "REMAINING": "Verbleibend",
+  "TEMP": "Temperatur",
+  "AUTH_REQUIRED": "Autorisierung erforderlich",
+  "OPEN_THIS_URL": "Diese URL im Browser öffnen:",
+
+  "STATUS_RUNNING": "Läuft",
+  "STATUS_READY": "Bereit",
+  "STATUS_FINISHED": "Fertig",
+  "STATUS_PAUSED": "Pausiert",
+  "STATUS_ERROR": "Fehler",
+  "STATUS_OFF": "Aus",
+
+  "PHASE_WASH": "Waschen",
+  "PHASE_RINSE": "Spülen",
+  "PHASE_SPIN": "Schleudern",
+  "PHASE_DRY": "Trocknen",
+  "PHASE_HEATING": "Heizen",
+  "PHASE_COOLING": "Kühlen",
+  "PHASE_ANTI_CREASE": "Knitterschutz",
+  
+  "DEVICE_WASHING_MACHINE": "Waschmaschine",
+  "DEVICE_DRYER": "Trockner",
+  "DEVICE_DISHWASHER": "Geschirrspüler",
+  "DEVICE_OVEN": "Backofen"
+}

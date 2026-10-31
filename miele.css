@@ -1,0 +1,299 @@
+.mmm-miele {
+  line-height: 1.35;
+}
+
+.mmm-miele .miele-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.mmm-miele .miele-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mmm-miele .miele-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0.15em;
+}
+
+.mmm-miele .miele-status {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.mmm-miele .miele-phase,
+.mmm-miele .miele-time,
+.mmm-miele .miele-meta,
+.mmm-miele .miele-error,
+.mmm-miele .miele-link {
+  margin-top: 0.2em;
+  font-size: 0.9em;
+}
+
+.mmm-miele .small {
+  font-size: 0.75em;
+}
+
+/* Washer icon */
+.mmm-miele .miele-icon-block {
+  width: 84px;
+  min-width: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mmm-miele .washer-icon {
+  position: relative;
+  width: 74px;
+  height: 92px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.mmm-miele .washer-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.mmm-miele .washer-button {
+  position: absolute;
+  top: 5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+}
+
+.mmm-miele .washer-button-1 {
+  right: 20px;
+}
+
+.mmm-miele .washer-button-2 {
+  right: 8px;
+}
+
+.mmm-miele .washer-door {
+  position: absolute;
+  left: 50%;
+  top: 52px;
+  width: 46px;
+  height: 46px;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mmm-miele .washer-glass {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mmm-miele .washer-water {
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  width: 120%;
+  height: 45%;
+  border-radius: 40% 40% 55% 55%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.mmm-miele .washer-bubble {
+  position: absolute;
+  bottom: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  opacity: 0.85;
+}
+
+.mmm-miele .washer-bubble-1 {
+  width: 5px;
+  height: 5px;
+  left: 8px;
+}
+
+.mmm-miele .washer-bubble-2 {
+  width: 7px;
+  height: 7px;
+  left: 16px;
+  bottom: 12px;
+}
+
+.mmm-miele .washer-bubble-3 {
+  width: 4px;
+  height: 4px;
+  left: 24px;
+  bottom: 10px;
+}
+
+/* Animation when machine is running */
+.mmm-miele .miele-icon-block.running .washer-glass {
+  animation: miele-drum-spin 2s linear infinite;
+}
+
+.mmm-miele .miele-icon-block.running .washer-water {
+  animation: miele-water-slosh 1.3s ease-in-out infinite alternate;
+}
+
+.mmm-miele .miele-icon-block.running .washer-bubble-1 {
+  animation: miele-bubble-float 1.8s ease-in-out infinite;
+}
+
+.mmm-miele .miele-icon-block.running .washer-bubble-2 {
+  animation: miele-bubble-float 2.2s ease-in-out infinite 0.3s;
+}
+
+.mmm-miele .miele-icon-block.running .washer-bubble-3 {
+  animation: miele-bubble-float 1.6s ease-in-out infinite 0.6s;
+}
+
+@keyframes miele-drum-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes miele-water-slosh {
+  0% {
+    transform: translateX(-2px) rotate(-4deg);
+  }
+  100% {
+    transform: translateX(2px) rotate(4deg);
+  }
+}
+
+@keyframes miele-bubble-float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-12px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Default (idle) color */
+.mmm-miele .washer-icon,
+.mmm-miele .washer-door,
+.mmm-miele .washer-topbar,
+.mmm-miele .washer-button {
+  border-color: rgba(255, 255, 255, 0.705);
+}
+
+/* Running → green highlight */
+.mmm-miele .miele-icon-block.running .washer-icon,
+.mmm-miele .miele-icon-block.running .washer-door,
+.mmm-miele .miele-icon-block.running .washer-topbar,
+.mmm-miele .miele-icon-block.running .washer-button {
+  border-color: #4caf50; /* nice bright green */
+}
+
+.mmm-miele .miele-icon-block.running .washer-icon {
+  box-shadow: 0 0 12px rgba(0, 200, 83, 0.6);
+}
+
+/* Make water slightly green when running */
+.mmm-miele .miele-icon-block.running .washer-water {
+  background: rgba(0, 200, 83, 0.35);
+}
+
+/* Bubbles green tint */
+.mmm-miele .miele-icon-block.running .washer-bubble {
+  background: rgba(0, 255, 120, 0.6);
+}
+
+/*********************************************
+ * Region Alignment Compatibility
+ * (works with MagicMirror default CSS)
+ *********************************************/
+
+.region.left .MMM-Miele {
+  margin-right:auto;
+}
+
+.region.right .MMM-Miele {
+  margin-left:auto;
+}
+
+/* Limit header width and align with module */
+.region.top.bar .MMM-Miele .module-header,
+.region.top.left .MMM-Miele .module-header,
+.region.top.center .MMM-Miele .module-header,
+.region.top.right .MMM-Miele .module-header,
+.region.upper.third .MMM-Miele .module-header,
+.region.middle.center .MMM-Miele .module-header,
+.region.lower.third .MMM-Miele .module-header,
+.region.bottom.center .MMM-Miele .module-header,
+.region.bottom.left .MMM-Miele .module-header,
+.region.bottom.right .MMM-Miele .module-header,
+.region.bottom.bar .MMM-Miele .module-header  {
+  max-width: 420px;        /* same as module */
+  width: 100%;
+  margin: 0 auto 10px auto; /* center + spacing below */
+  text-align: left;
+  box-sizing: border-box;
+  font-size: 0; /* hide text */
+  position: relative;
+}
+
+/* Insert logo */
+.MMM-Miele .module-header::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  background-image: url("miele-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Ensure module content matches header width */
+.region.top.center .MMM-Miele .module-content,
+.region.upper.third .MMM-Miele .module-content,
+.region.middle.center .MMM-Miele .module-content,
+.region.lower.third .MMM-Miele .module-content,
+.region.bottom.center .MMM-Miele .module-content {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Limit width when used in middle_center */
+.region.top.bar .mmm-miele,
+.region.top.center .mmm-miele,
+.region.top.right .mmm-miele,
+.region.upper.third .mmm-miele,
+.region.middle.center .mmm-miele,
+.region.lower.third .mmm-miele,
+.region.bottom.center .mmm-miele,
+.region.bottom.bar .mmm-miele {
+  max-width: 420px;
+  width: 100%;
+  margin: 0 auto; /* center horizontally */
+  text-align: left;
+}

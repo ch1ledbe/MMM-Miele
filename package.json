@@ -1,0 +1,7 @@
+{
+  "name": "mmm-miele",
+  "version": "1.0.0",
+  "description": "MagicMirror module for Miele device state",
+  "main": "MMM-Miele.js",
+  "license": "MIT"
+}

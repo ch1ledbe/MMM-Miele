@@ -1,0 +1,32 @@
+{
+  "LOADING": "Loading Miele…",
+  "ERROR": "Error",
+  "NO_DEVICE_FOUND": "No Miele device found",
+  "UNKNOWN": "Unknown",
+  "PHASE": "Phase",
+  "ELAPSED": "Elapsed",
+  "REMAINING": "Remaining",
+  "TEMP": "Temp",
+  "AUTH_REQUIRED": "Authorization required",
+  "OPEN_THIS_URL": "Open this URL in a browser:",
+
+  "STATUS_RUNNING": "Running",
+  "STATUS_READY": "Ready",
+  "STATUS_FINISHED": "Finished",
+  "STATUS_PAUSED": "Paused",
+  "STATUS_ERROR": "Error",
+  "STATUS_OFF": "Off",
+
+  "PHASE_WASH": "Wash",
+  "PHASE_RINSE": "Rinsing",
+  "PHASE_SPIN": "Spin",
+  "PHASE_DRY": "Dry",
+  "PHASE_HEATING": "Heating",
+  "PHASE_COOLING": "Cooling",
+  "PHASE_ANTI_CREASE": "Anti-crease",
+  
+  "DEVICE_WASHING_MACHINE": "Washing Machine",
+  "DEVICE_DRYER": "Dryer",
+  "DEVICE_DISHWASHER": "Dishwasher",
+  "DEVICE_OVEN": "Oven"
+}
